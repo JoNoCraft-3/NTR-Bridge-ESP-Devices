@@ -1,0 +1,25 @@
+{
+  "devices": [
+    {
+      "name": "NTR-Bridge ESP32",
+      "version": "1.2",
+      "binaries": [
+        {
+          "name": "bootloader.bin",
+          "url": "https://github.com/JoNoCraft-3/NTR-Bridge-ESP-Devices/releases/download/ESP32_1.2/bootloader.bin",
+          "flash_address": "0x1000"
+        },
+        {
+          "name": "partition-table.bin",
+          "url": "https://github.com/JoNoCraft-3/NTR-Bridge-ESP-Devices/releases/download/ESP32_1.2/partition-table.bin",
+          "flash_address": "0x8000"
+        },
+        {
+          "name": "application.bin",
+          "url": "https://github.com/JoNoCraft-3/NTR-Bridge-ESP-Devices/releases/download/ESP32_1.2/application.bin",
+          "flash_address": "0x10000"
+        }
+      ]
+    }
+  ]
+}
