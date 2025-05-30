@@ -1,14 +1,34 @@
 {
   "devices": [
     {
-      "display_name": "ESP32 Standard",
-      "board": "ESP32",
-      "tag_prefix": "ESP32"
+      "board": "esp32dev",
+      "tag_prefix": "ESP32",
+      "display_name": "ESP32 Dev Board",
+      "flash_files": [
+        {
+          "filename": "bootloader.bin",
+          "address": "0x1000"
+        },
+        {
+          "filename": "partitions.bin",
+          "address": "0x8000"
+        },
+        {
+          "filename": "firmware.bin",
+          "address": "0x10000"
+        }
+      ]
     },
     {
-      "display_name": "ESP8266 Mini",
-      "board": "ESP8266",
-      "tag_prefix": "ESP8266"
+      "board": "esp8266",
+      "tag_prefix": "ESP8266",
+      "display_name": "ESP8266 NodeMCU",
+      "flash_files": [
+        {
+          "filename": "firmware.bin",
+          "address": "0x0"
+        }
+      ]
     }
   ]
 }
