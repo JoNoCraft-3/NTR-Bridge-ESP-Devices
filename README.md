@@ -43,7 +43,7 @@ It also comes with a web interface for easy configuration.
 
 3. Choose your installation method:
    - ✅ [GUI Method (easy)](#-installation-using-gui-method)
-   - 🖥️ [Manual Terminal Method](#installation-using-the-terminal)
+   - 🖥️ [Manual Terminal Method](#-installation-using-gui-method)
 
 ---
 
