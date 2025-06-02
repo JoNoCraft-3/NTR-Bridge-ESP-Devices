@@ -64,3 +64,9 @@ Head over to [`Finished installing`](#finished-installing)
 
 
 ## Finished installing
+
+Connect to the WiFi with the name `NTR-Bridge` and open a browser. There, go to `http://ntr.bridge`, and configure your Bridge like you like it.
+
+Now, you can connect your 3DS and your PC to the network and start recording. When you connect your 3DS, the connection test will fail, but just ignore that. Once you've set the WiFi connection up, go to the home menu, open the Rosalina Menu (R+D-Pad Down+Select) and go to `System settings` and click on `Force wireless connection`. Once clicked, select the NTR-Bridge Network. Cheers!
+
+Note: When you cut the power connection to the bridge, the password and name of the network will reset. I'm sorry this happens, but I'm not quite there yet.
