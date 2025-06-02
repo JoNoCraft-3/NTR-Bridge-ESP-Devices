@@ -10,7 +10,7 @@ This project improves NTR streaming by putting an ESP device into **AP mode** (A
 It **does not** provide an internet connection — so your NTR signal won't get disturbed by other devices using bandwidth.  
 It also comes with a web interface for easy configuration.
 
-📖 Check the [installation instructions](#installation-methods) below.
+📖 Check the [installation instructions](#-installation-methods) below.
 
 ---
 
@@ -74,7 +74,7 @@ It also comes with a web interface for easy configuration.
 
 5. Click **Flash** and wait for the process to complete. Done!
 
-➡️ Now go to [Finished Installing](#finished-installing)
+➡️ Now go to [Finished Installing](#-finished-installing)
 
 ---
 
@@ -90,3 +90,31 @@ It also comes with a web interface for easy configuration.
    python3 -m esptool write_flash 0x1000 bootloader.bin
    python3 -m esptool write_flash 0x8000 partitions.bin
    python3 -m esptool write_flash 0x10000 firmware.bin
+
+➡️ Now go to [Finished Installing](#-finished-installing)
+
+
+## ✅ Finished Installing
+
+Connect to the WiFi network named **NTR-Bridge** and open a browser.  
+There, go to [`http://ntr.bridge`](http://ntr.bridge) and configure your bridge as desired.
+
+Now you can connect your **3DS** and your **PC** to the network and start recording.
+
+> ℹ️ When you connect your 3DS, the **connection test will fail** — just ignore it.
+
+Once the WiFi connection is set up on the 3DS:
+
+1. Go to the **Home Menu**
+2. Open the **Rosalina Menu**: `R + D-Pad Down + Select`
+3. Go to **System Settings**
+4. Click on **Force Wireless Connection**
+5. Select the `NTR-Bridge` network
+
+🎉 Done! Your 3DS is now connected via NTR-Bridge.
+
+---
+
+> ⚠️ **Note:**  
+> If you disconnect power from the bridge, the SSID and password will reset.  
+> This is a known issue — persistent configuration is still under development.
