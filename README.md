@@ -32,3 +32,6 @@ Here are the [installation instructions](#installation-methods)
 Download the file clone/download this repository, and run the Pythonscript `esp_install.py`:
 - Windows: Open a terminal as Administrator and type `python esp_install.py`, and press *`ENTER`*
 - Linux: Open a terminal and type `python3 esp_install.py`, then press *`ENTER`*
+<br>
+Now you'll see this window:
+![image](images/mainwindowgui.png)
