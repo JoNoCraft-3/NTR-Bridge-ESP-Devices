@@ -39,4 +39,4 @@ Now you'll see this window:
 
 Now select your board:
 
-
+![image2](https://raw.githubusercontent.com/JoNoCraft-3/NTR-Bridge-ESP-Devices/main/images/selectboardgui.png)
