@@ -35,4 +35,4 @@ Download the file clone/download this repository, and run the Pythonscript `esp_
 <br>
 Now you'll see this window:
 <br>
-![image](images/mainwindowgui.png)
+![image](/images/mainwindowgui.png)
