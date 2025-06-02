@@ -1,73 +1,92 @@
 # NTR-Bridge-ESP-Devices
 
-## You really like gaming on your New Nintendo 3DS and you want to record your screen without lags or anyting and you have an ESP Devcice laying around and dont know what do to with it?
-Here is the perfect solution for that.
-This Project aims to make NTR Streaming better by putting an ESP Device into AP Mode (AccesPoint Mode). It does nHer ot provide an internet connection, so your NTR signal doesn't gets disturbed by other devices that consume content over the Internet. It also comes with a web interface.
+## 🎮 Stream your New Nintendo 3DS with low latency!
 
-Here are the [installation instructions](#installation-methods)
+Do you love gaming on your New Nintendo 3DS and want to record your screen without lags or interruptions?  
+And you have an ESP device lying around and don't know what to do with it?  
+**Here is the perfect solution!**
 
+This project improves NTR streaming by putting an ESP device into **AP mode** (Access Point mode).  
+It **does not** provide an internet connection — so your NTR signal won't get disturbed by other devices using bandwidth.  
+It also comes with a web interface for easy configuration.
 
+📖 Check the [installation instructions](#installation-methods) below.
 
+---
 
-# Installation Methods
+# 🚀 Installation Methods
 
-### Prep. work
-1. Install [Python](https://python.org). Download the executable corresponding to your OS:
-- [Windows](https://www.python.org/downloads/windows/)
-- Linux (Debian based, should be preinstalled): In your terminal window, type `sudo apt install python3 -y`
-- [macOS](https://www.python.org/downloads/macos/)
+## 🛠️ Preparation
+
+1. Install [Python](https://python.org). Download the version for your OS:
+   - [Windows](https://www.python.org/downloads/windows/)
+   - Linux (Debian-based, usually preinstalled):  
+     ```bash
+     sudo apt install python3 -y
+     ```
+   - [macOS](https://www.python.org/downloads/macos/)
 
 2. Install `esptool`:
-- Windows: Open a windows terminal as Administrator, then type `pip install esptool --break-system-packages`
-- Linux: Open a terminal window, and type `sudo pip install esptool --break-system-packages`
-<br>NO `--break-system-packages` DOES NOT BREAK YOUR SYSTEM, IN PYTHON 3.12, THEY DECIDED TO LOCK THE NORMAL INSTALLATION, SO THIS IS NEEDED TO PROCEED
+   - **Windows**:  
+     Open a terminal as administrator and run:  
+     ```bash
+     pip install esptool --break-system-packages
+     ```
+   - **Linux**:  
+     Open a terminal and run:  
+     ```bash
+     sudo pip install esptool --break-system-packages
+     ```
 
-3. Now choose which method you want to use:
-- [(EASY) GUI Method](#installation-using-gui-method)
-- [(NOT EASY BUT NOT HARD) Manual method](#installation-using-the-terminal)
+   ⚠️ **Note:** `--break-system-packages` will not break your system.  
+   It is required in Python 3.12+ because of stricter package management rules.
 
+3. Choose your installation method:
+   - ✅ [GUI Method (easy)](#installation-using-gui-method)
+   - 🖥️ [Manual Terminal Method](#installation-using-the-terminal)
 
+---
 
-## Installation using GUI Method
+## ✅ Installation Using GUI Method
 
-Plug your Board into your computer. You may need a USB Serial Bridge, because not every ESP has an built in Bridge. I do not integrate the use of the Bridge here.
+1. Plug your board into your computer.  
+   Some ESP boards require a USB-to-Serial bridge (not covered here).
 
-Clone/download this repository, and run the Pythonscript `esp_install.py`:
-- Windows: Open a terminal as Administrator and type `python esp_install.py`, and press *`ENTER`*
-- Linux: Open a terminal and type `python3 esp_install.py`, then press *`ENTER`*
-<br>
-Now you'll see this window:
+2. Clone or download this repository.
 
-![image1](https://raw.githubusercontent.com/JoNoCraft-3/NTR-Bridge-ESP-Devices/main/images/mainwindowgui.png)
+3. Run the installer script:
+   - **Windows**:  
+     ```bash
+     python esp_install.py
+     ```
+   - **Linux**:  
+     ```bash
+     python3 esp_install.py
+     ```
 
-Now select your board:
+   You should now see this window:
 
-![image2](https://raw.githubusercontent.com/JoNoCraft-3/NTR-Bridge-ESP-Devices/main/images/selectboardgui.png)
+   ![image1](https://raw.githubusercontent.com/JoNoCraft-3/NTR-Bridge-ESP-Devices/main/images/mainwindowgui.png)
 
-Now, that you've selected your board, click on flash an wair for it to complete. It's finished.
+4. Select your board:
 
-Head over to [`Finished installing`](#finished-installing)
+   ![image2](https://raw.githubusercontent.com/JoNoCraft-3/NTR-Bridge-ESP-Devices/main/images/selectboardgui.png)
 
+5. Click **Flash** and wait for the process to complete. Done!
 
+➡️ Now go to [Finished Installing](#finished-installing)
 
-## Installation using the terminal
+---
 
-Plug your Board into your computer. You may need a USB Serial Bridge, because not every ESP has an built in Bridge. I do not integrate the use of the Bridge here.
+## 🖥️ Installation Using the Terminal
 
-Open a terminal:
-1. Type `python3 -m esptool erase_flash`
-2. Type `python3 -m esptool write_flash 0x1000 bootloader.bin`
-3. Type `python3 -m esptool write_flash 0x8000 partitions.bin`
-4. Type `python3 -m esptool write_flash 0x10000 firmware.bin`
+1. Plug your board into your computer.  
+   A USB-to-Serial bridge may be needed (not covered here).
 
-Head over to [`Finished installing`](#finished-installing)
+2. Open a terminal and run the following commands:
 
-
-
-## Finished installing
-
-Connect to the WiFi with the name `NTR-Bridge` and open a browser. There, go to `http://ntr.bridge`, and configure your Bridge like you like it.
-
-Now, you can connect your 3DS and your PC to the network and start recording. When you connect your 3DS, the connection test will fail, but just ignore that. Once you've set the WiFi connection up, go to the home menu, open the Rosalina Menu (R+D-Pad Down+Select) and go to `System settings` and click on `Force wireless connection`. Once clicked, select the NTR-Bridge Network. Cheers!
-
-Note: When you cut the power connection to the bridge, the password and name of the network will reset. I'm sorry this happens, but I'm not quite there yet.
+   ```bash
+   python3 -m esptool erase_flash
+   python3 -m esptool write_flash 0x1000 bootloader.bin
+   python3 -m esptool write_flash 0x8000 partitions.bin
+   python3 -m esptool write_flash 0x10000 firmware.bin
