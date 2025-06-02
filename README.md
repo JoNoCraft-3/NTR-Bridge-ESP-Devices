@@ -23,7 +23,7 @@ Here are the [installation instructions](#installation-methods)
 <br>NO `--break-system-packages` DOES NOT BREAK YOUR SYSTEM, IN PYTHON 3.12, THEY DECIDED TO LOCK THE NORMAL INSTALLATION, SO THIS IS NEEDED TO PROCEED
 
 3. Now choose which method you want to use:
-- 
+- [(EASY) GUI Method](#installation-using-gui-method)
 
 
 
