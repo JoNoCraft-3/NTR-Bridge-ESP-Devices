@@ -35,4 +35,4 @@ Download the file clone/download this repository, and run the Pythonscript `esp_
 <br>
 Now you'll see this window:
 <br>
-![image](https://github.com/JoNoCraft-3/NTR-Bridge-ESP-Devices/blob/e4894be89dd4d878d22e15e8a097b084e365944e/images/mainwindowgui.png)
+![image](images/mainwindowgui.png)
