@@ -9,4 +9,4 @@ Here are the [installation instructions](#installation)
 
 
 
-# Installation
+# Installation Methods
