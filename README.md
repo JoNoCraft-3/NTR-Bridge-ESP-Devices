@@ -29,6 +29,8 @@ Here are the [installation instructions](#installation-methods)
 
 ## Installation using GUI Method
 
+Plug your Board into your computer. You may need a USB Serial Bridge, because not every ESP has an built in Bridge. I do not integrate the use of the Bridge here.
+
 Clone/download this repository, and run the Pythonscript `esp_install.py`:
 - Windows: Open a terminal as Administrator and type `python esp_install.py`, and press *`ENTER`*
 - Linux: Open a terminal and type `python3 esp_install.py`, then press *`ENTER`*
@@ -40,3 +42,25 @@ Now you'll see this window:
 Now select your board:
 
 ![image2](https://raw.githubusercontent.com/JoNoCraft-3/NTR-Bridge-ESP-Devices/main/images/selectboardgui.png)
+
+Now, that you've selected your board, click on flash an wair for it to complete. It's finished.
+
+Head over to [`Finished installing`](#finished-installing)
+
+
+
+## Installation using the terminal
+
+Plug your Board into your computer. You may need a USB Serial Bridge, because not every ESP has an built in Bridge. I do not integrate the use of the Bridge here.
+
+Open a terminal:
+1. Type `python3 -m esptool erase_flash`
+2. Type `python3 -m esptool write_flash 0x1000 bootloader.bin`
+3. Type `python3 -m esptool write_flash 0x8000 partitions.bin`
+4. Type `python3 -m esptool write_flash 0x10000 firmware.bin`
+
+Head over to [`Finished installing`](#finished-installing)
+
+
+
+## Finished installing
