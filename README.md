@@ -34,4 +34,5 @@ Download the file clone/download this repository, and run the Pythonscript `esp_
 - Linux: Open a terminal and type `python3 esp_install.py`, then press *`ENTER`*
 <br>
 Now you'll see this window:
+<br>
 ![image](images/mainwindowgui.png)
