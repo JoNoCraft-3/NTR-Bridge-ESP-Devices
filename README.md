@@ -12,6 +12,12 @@ Here are the [installation instructions](#installation-methods)
 # Installation Methods
 
 ### Prep. work
-First, you need to install [Python](https://python.org). Download the executable corresponding to your OS:
+1. Install [Python](https://python.org). Download the executable corresponding to your OS:
 - [Windows](https://www.python.org/downloads/windows/)
-- Linux (Debian based, should be preinstalled): In your terminal window, type `nano`
+- Linux (Debian based, should be preinstalled): In your terminal window, type `sudo apt install python3 -y`
+- [macOS](https://www.python.org/downloads/macos/)
+
+2. Install `esptool`:
+- Windows: Open a windows terminal as Administrator, then type `pip install esptool --break-system-packages`
+- Linux: Open a terminal window, and type `sudo pip install esptool --break-system-packages`
+NO `--break-system-packages` DOES NOT BREAK YOUR SYSTEM, IN PYTHON 3.12, THEY DECIDED TO LOCK THE NORMAL INSTALLATION, SO THIS IS NEEDED TO PROCEED
