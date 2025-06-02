@@ -24,6 +24,7 @@ Here are the [installation instructions](#installation-methods)
 
 3. Now choose which method you want to use:
 - [(EASY) GUI Method](#installation-using-gui-method)
+- [(NOT EASY BUT NOT HARD) Manual method](#installation-using-the-terminal)
 
 
 
