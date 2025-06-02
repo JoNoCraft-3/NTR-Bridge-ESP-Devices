@@ -83,7 +83,9 @@ It also comes with a web interface for easy configuration.
 1. Plug your board into your computer.  
    A USB-to-Serial bridge may be needed (not covered here).
 
-2. Open a terminal and run the following commands:
+2. Download the latest [rleases](https://github.com/JoNoCraft-3/NTR-Bridge-ESP-Devices/releases) for your board.
+
+3. Open a terminal and run the following commands:
 
    ```bash
    python3 -m esptool erase_flash
