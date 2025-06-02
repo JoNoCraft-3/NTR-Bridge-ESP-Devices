@@ -13,4 +13,5 @@ Here are the [installation instructions](#installation-methods)
 
 ### Prep. work
 First, you need to install [Python](https://python.org). Download the executable corresponding to your OS:
-- Lol
+- [Windows](https://www.python.org/downloads/windows/)
+- Linux (Debian based, should be preinstalled): In your terminal window, type 'sudo apt install python3'
