@@ -42,7 +42,7 @@ It also comes with a web interface for easy configuration.
    It is required in Python 3.12+ because of stricter package management rules.
 
 3. Choose your installation method:
-   - ✅ [GUI Method (easy)](#installation-using-gui-method)
+   - ✅ [GUI Method (easy)](#-installation-using-gui-method)
    - 🖥️ [Manual Terminal Method](#installation-using-the-terminal)
 
 ---
