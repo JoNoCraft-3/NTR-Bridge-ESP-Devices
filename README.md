@@ -21,3 +21,6 @@ Here are the [installation instructions](#installation-methods)
 - Windows: Open a windows terminal as Administrator, then type `pip install esptool --break-system-packages`
 - Linux: Open a terminal window, and type `sudo pip install esptool --break-system-packages`
 <br>NO `--break-system-packages` DOES NOT BREAK YOUR SYSTEM, IN PYTHON 3.12, THEY DECIDED TO LOCK THE NORMAL INSTALLATION, SO THIS IS NEEDED TO PROCEED
+
+3. Now choose which method you want to use:
+- 
