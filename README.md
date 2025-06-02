@@ -24,3 +24,7 @@ Here are the [installation instructions](#installation-methods)
 
 3. Now choose which method you want to use:
 - 
+
+
+
+## Installation using GUI Method
