@@ -13,4 +13,4 @@ Here are the [installation instructions](#installation-methods)
 
 ### Prep. work
 First, you need to install [Python](https://python.org). Download the executable corresponding to your OS:
-  Windows: 
+- Lol
